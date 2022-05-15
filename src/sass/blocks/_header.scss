@@ -1,4 +1,63 @@
 .header{
-    color:#fff;
-    
+    min-height: 650px;
+    background: url(../../img/header_bg.png) center (center/cover) no-repeat;
+    color: #fff;
+    margin: 0 auto;
+    .header__nav {
+        display: flex;
+        flex: 1 1 1;
+        .nav__logo {
+            &__partner {
+            }
+        }
+        .logo__img {
+            width: 251px;
+            height: 45px;
+        }
+    }
+
+
+
+    .official__par {
+    }
+    .official__img {
+    }
+    .nav__callback {
+    }
+    .nav__number {
+    }
+    .callback__btn {
+    }
+    &__main {
+        &__titles {
+        }
+        &__title {
+        }
+        .h2 {
+        }
+        &__subtitle {
+        }
+    }
+
+
+    .header__icons {
+    }
+    .middle__icon {
+    }
+    .middle__icon1 {
+    }
+    .middle__icon2 {
+    }
+    .middle__icon3 {
+    }
+    .header__buttom {
+    }
+    .buttom__consult {
+    }
+    .consult__btn {
+    }
+    .btn__large {
+    }
+    .consult__catalog {
+    }
 }
