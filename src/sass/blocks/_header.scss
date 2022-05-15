@@ -1,63 +1,143 @@
-.header{
+.header {
     min-height: 650px;
     background: url(../../img/header_bg.png) center (center/cover) no-repeat;
     color: #fff;
     margin: 0 auto;
-    .header__nav {
-        display: flex;
-        flex: 1 1 1;
-        .nav__logo {
-            &__partner {
+    padding: 21px 0 89px;
+    
+            &__main {
+                margin-top: 84px;
+                min-width: 530px;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+    
+            &__titles {
+                text-transform: uppercase;
+            }
+    
+            &__title {
+                font-weight: 700;
+                font-size: 42px;
+                
+            }
+    
+            &__subtitle {
+                font-weight: 500;
+                font-size: 24px;
+                margin-top: 17px;
+
+            }
+    
+            &__middle {
+                min-width: 424px;
+                text-align: center;
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                margin-top: 58px;
+                margin-bottom: 62px;
+
+            }
+
+        &__item{
+            p {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
             }
         }
-        .logo__img {
-            width: 251px;
-            height: 45px;
-        }
-    }
 
+    
+            &__buttom {
+            }
+    
+            &__consult {
+            }
+    
+            &__btn {
+                margin-bottom: 8px;
+            }
 
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+            &__logo {
+                min-height: 54px;
+                position: relative;
+                
+            }
+    
+            &__img {
+                width: 251px;
+                height: 45px;
+            }
+    
+            &__partner {
+                width: 215px;
+                height: 29px;
+                margin-top: 10px;
+            }
+    
+            &__par {
+                font-weight: 500;
+                font-size: 12px;
+            }
+    
+            &__callback {
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+                align-items:flex-end;
+            }
+    
+            &__number {
+                font-weight: 700;
+                font-size: 18px;
+                color:#fff;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+    
+            &__btn {
+                display: block;
+                position: relative;
+                width: 153px;
+                height: 32px;
+                background: #C70101;
+                border-radius: 5px;
+                margin-top: 4px;
+                outline: none;
+                cursor: pointer;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 12px;
+                transition: .5s all ease;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+    }
+    &__consult {
 
-    .official__par {
     }
-    .official__img {
+    &__catalog {
+        font-weight: 500;
+        font-size: 16px;
+        text-align: end;
     }
-    .nav__callback {
-    }
-    .nav__number {
-    }
-    .callback__btn {
-    }
-    &__main {
-        &__titles {
-        }
-        &__title {
-        }
-        .h2 {
-        }
-        &__subtitle {
-        }
-    }
+    &__link{
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+        color:#fff;
 
-
-    .header__icons {
-    }
-    .middle__icon {
-    }
-    .middle__icon1 {
-    }
-    .middle__icon2 {
-    }
-    .middle__icon3 {
-    }
-    .header__buttom {
-    }
-    .buttom__consult {
-    }
-    .consult__btn {
-    }
-    .btn__large {
-    }
-    .consult__catalog {
     }
 }
