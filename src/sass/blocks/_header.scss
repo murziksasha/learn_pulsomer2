@@ -49,13 +49,6 @@
                 line-height: 14px;
             }
         }
-
-    
-            &__buttom {
-            }
-    
-            &__consult {
-            }
     
             &__btn {
                 margin-bottom: 8px;
@@ -72,8 +65,7 @@
             }
     
             &__img {
-                width: 251px;
-                height: 45px;
+                width: 100%;
             }
     
             &__partner {
@@ -109,10 +101,10 @@
                 position: relative;
                 width: 153px;
                 height: 32px;
-                background: #C70101;
+                background: $main-color;
                 border-radius: 5px;
                 margin-top: 4px;
-                outline: none;
+                border:none;
                 cursor: pointer;
                 color: #fff;
                 text-transform: uppercase;
@@ -123,9 +115,6 @@
                     transform: scale(1.1);
                 }
             }
-    }
-    &__consult {
-
     }
     &__catalog {
         font-weight: 500;

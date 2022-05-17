@@ -1,0 +1,19 @@
+.feed__form {
+  width: 303px;
+  height: 258px;
+  margin-top: 36px;
+  display: flex;
+  flex-flow:column;
+  justify-content: space-between;
+  align-items: flex-start;
+  input{
+    width: 300px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 21px;
+    &:not(:first-child){
+      margin-top: 11px;
+    }
+  }
+}

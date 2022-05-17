@@ -1,0 +1,38 @@
+.slider {
+  padding: 107px 0;
+  background:#fff;
+  .wrapper{
+    position: relative;
+
+    .prev, .next{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left:-66px;
+      border: none;
+      background-color: #fff;
+      cursor: pointer;
+      
+      img{
+        width: 31px;
+        height: 50px;
+      }
+    }
+    .next {
+      right: -66px;
+      left: auto;
+    }
+  }
+    .my-slider {
+      margin: 81px 0 ;
+      min-height: 572px;
+    }
+    .tns-item {
+      img{
+        display: block;
+        margin: 0 auto;
+      }
+    }
+}
+
+

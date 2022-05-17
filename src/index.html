@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Title</title>
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
         поддержку JavaScript в настройках браузера</span>
     </noscript>
 
-    <div class="container">
+    <section class="container">
         <div class="header">
             <div class="wrapper">
                 <div class="nav">
@@ -49,7 +50,7 @@
                     </div>
                     <div class="header__buttom">
                         <div class="header__consult">
-                            <div class="header__btn btn__large">заказать консультацию</div>
+                            <div class="header__btn btn btn__large">заказать консультацию</div>
                             <p class="header__catalog">или<a href="#" class="header__link">перейти в каталог</a></p>
                         </div>
                     </div>
@@ -79,8 +80,66 @@
                 </div>
             </div>
         </section>
-    </div>
+        
+        <section class="consult">
+            <div class="wrapper">
+                <h2 class="consult__title">получите бесплатную консультацию</h2>
+                <h2 class="consult__title">по подбору пульсометра</h2>
+                <p class="consult__par">Просто заполните форму заявки</p>
+                <p class="consult__par">и мы перезвоним вам в течении 20 минут</p>
+                <form action="#" class="feed__form">
+                    <input name="name" required type="text" placeholder="Ваше имя">
+                    <input name="phone" required type="number" placeholder="Ваш телефон">
+                    <input name="email" required type="email" placeholder="Ваш E-mail">
+                    <button class="consult_btn btn btn__large">заказать консультацию</button>
+                </form>
+            </div>
+        </section>
 
+        <section class="slider">
+            <div class="wrapper">
+                <div class="my-slider">
+                    <img src="./img/slide_1.png" alt="slide_polar1">
+                    <img src="./img/slide_2.png" alt="slide_polar2">
+                    <img src="./img/slide_3.png" alt="slide_polar3">
+                </div>
+                <button type:'button' class="prev"><img src="./icons/array_left_ico.png" alt=""></button>
+                <button type:'button' class="next"><img src="./icons/array_right_ico.png" alt=""></button>
+                
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="wrapper">
+                <h2 class="catalog__title">Каталог пульсометров</h2>
+                <ul class="catalog__tabs">
+                    <li class="catalog__tab"><div>для фитнеса</div> </li>
+                    <li class="catalog__tab"><div>для бега</div></li>
+                    <li class="catalog__tab"><div>для триатлона</div></li>
+                </ul>
+                <div class="catalog__content">
+                    <div class="catalog-item">
+                        <img class="catalog-item__img" src="./img/pulsometr.png" alt="pulsometr">
+                        <h3 class="catalog-item__subtitle">Пульсометр Polar FT1</h3>
+                        <p class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</p>
+                        <a class="catalog-item__link" href="#">подробнее</a>
+                        <hr class="catalog-item__line">
+                        <div class="catalog-item__footer">
+                            <div class="catalog-item__price">
+                                <p class="catalog-item__price_old">4 750 руб.</p>
+                                <p class="catalog-item__price_new">4 500 руб.</p>
+                            </div>
+                            <button class="catalog-item__btn btn btn__small">Купить</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="catalog__content"></div>
+                <div class="catalog__content"></div>
+            </div>
+        </section>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script src="js/main.js"></script>
 
 </body>

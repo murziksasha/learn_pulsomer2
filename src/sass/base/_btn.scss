@@ -1,15 +1,23 @@
-.btn__large{
-  width: 300px;
-  height: 50px;
-  background: #C70101;
-  border-radius: 5px;
-  text-align: center;
-  padding-top: 17px;
+.btn {
   color:#fff;
   text-transform: uppercase;
   transition: .5s all ease;
+  background: $main-color;
+  cursor: pointer;
+  border:none;
+  border-radius: 5px;
+  text-align: center;
   &:hover{
     transform: scale(1.1);
   }
-  
+  &__large{
+    width: 300px;
+    height: 50px;
+    padding-top: 17px;
+
+  }
+  &__small{
+    width: 135px;
+    height: 44px;
+  }
 }
