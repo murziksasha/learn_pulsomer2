@@ -29,25 +29,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     
   });
 
-  //переход между страницами табов (которая скрыта и обратно)
-  // $('.catalog-item__link').each(function(i){
-  //   $(this).on('click', function(e){
-  //     e.preventDefault();
-  //     $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-  //     $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
-  //     console.log(`i = ${i}`);
-  //     console.log(`e = ${e}`);
-  //   })
-  // })
-
-  // $('.catalog-item__link_back').each(function(i){
-  //   $(this).on('click', function(e){
-  //     e.preventDefault();
-  //     $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-  //     $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
-  //   })
-  // })
-
   //Оптимизированный вариант совмещающий эти две функции
   const toggleSlide = (item)=>{
     $(item).each(function(i){
@@ -61,4 +42,60 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__link_back');
+
+
+  //modal jquery code
+
+  $('[data-modal=consultation]').on('click', function(){
+    $('.overlay, #consultation').fadeIn('slow');
+
+  });
+
+  $('.modal__close').on('click', function(){
+    $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+  })
+
+
+  $('[data-catalog=buy]').each(function(i){
+    $(this).on('click', function(){
+      $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+      $('.overlay, #order').fadeIn('slow');
+    })
+  });
+
+  //validate form by plagin JQuery
+  validateForm('#consultation form');
+  validateForm('#order form');
+  validateForm('#consultation-form');
+
+  function validateForm(form){
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        phone: "required",
+        email: {
+          required: true,
+          email: true
+        }
+      },
+        messages: {
+          name: {
+            required: 'Введите Ваше Имя',
+            minlength: jQuery.validator.format('ВВедите не меньше {0} символов')
+  
+          },
+          email: {
+            required: 'Введите почтовый адрес',
+            email: 'Введенный почтовый адрес не корректный!'
+          },
+          phone: 'Введите номер телефона'
+        }
+  
+    });
+  }
+
+  
 });
