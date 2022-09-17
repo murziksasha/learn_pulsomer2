@@ -24,7 +24,10 @@ function syncBrowser (){
 }
 
 function cleanDist(){
-    return del('dist')
+    return del('dist/css',
+                'dist/js',
+                'dist/**.html',
+                'dist/fonts')
 }
 
 function html() {
