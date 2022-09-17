@@ -7,6 +7,8 @@
     <title>Page Title</title>
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -19,10 +21,10 @@
         <div class="header">
             <div class="wrapper">
                 <div class="nav">
-                    <div class="nav__logo"><a href="#"><img src="./img/logo.png" alt="logo" class="nav__img"></a></div>
+                    <div class="nav__logo wow animate__animated  animate__bounce wow"><a href="#"><img src="./img/logo.png" alt="logo" class="nav__img"></a></div>
                     <div class="nav__partner">
                         <p class="nav__par">Официальный представитель</p>
-                        <img src="./img/Garmin, Polar, Suunto.png" alt="partners" class="nav__partner partner__img">
+                        <img src="img/Garmin, Polar, Suunto.png" alt="partners" class="nav__partner partner__img">
                     </div>
                     <div class="nav__callback">
                         <a href="tel:74999228974" class="nav__number">+7 (499) 922-89-74</a>
@@ -68,7 +70,7 @@
                             так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</p>
                     </div>
                     <div class="advantage__card">
-                        <img class="advantage__img"  src="./icons/heart_ico.png" alt="heart">
+                        <img class="advantage__img advantage__img_heart"  src="./icons/heart_ico.png" alt="heart">
                         <h3 class="advantage__subtitle">Заботимся о здоровье</h3>
                         <p class="advantage__par">Мы работаем для того, <br> чтобы Ваши занятия спортом шли на <br>пользу Вашему здоровью и были в радость Вам и Вашим близким!</p>
                     </div>
@@ -103,8 +105,8 @@
                     <img src="./img/slide_2.png" alt="slide_polar2">
                     <img src="./img/slide_3.png" alt="slide_polar3">
                 </div>
-                <button type:'button' class="prev"><img src="./icons/array_left_ico.png" alt=""></button>
-                <button type:'button' class="next"><img src="./icons/array_right_ico.png" alt=""></button>
+                <button class="prev"><img src="./icons/array_left_ico.png" alt=""></button>
+                <button class="next"><img src="./icons/array_right_ico.png" alt=""></button>
                 
             </div>
         </section>
@@ -399,7 +401,7 @@
         <section class="feedback">
             <div class="wrapper">
                 <h3 class="feedback__title">отзывы клинетов</h3>
-                <div class="feedback__item">
+                <div class="feedback__item animate__animated wow animate__fadeInLeft" data-wow-duration="2s">
                     <div><img src="./img/ava_1.png" alt="feedback" class="feedback__img"></div>
                     <div class="feedback__text">
                         <h3 class="feedback__subtitle">Ирина Иванченко</h3>
@@ -494,6 +496,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script src="js/jquery.validate.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>

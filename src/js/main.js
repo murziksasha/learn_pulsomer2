@@ -97,5 +97,9 @@ document.addEventListener('DOMContentLoaded',()=>{
     });
   }
 
-  
+  new WOW().init({
+    useClassNames: true,
+    initClassName: false,
+    animatedClassName: 'animate__animated'
+  });
 });
