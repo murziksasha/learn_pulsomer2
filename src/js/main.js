@@ -102,4 +102,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     initClassName: false,
     animatedClassName: 'animate__animated'
   });
+
+  
 });
